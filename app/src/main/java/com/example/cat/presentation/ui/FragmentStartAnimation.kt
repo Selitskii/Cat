@@ -42,6 +42,7 @@ class FragmentStartAnimation : Fragment() {
         catImageView.setBackgroundResource(R.drawable.happi_cat)
         catAnimation = catImageView.background as AnimationDrawable
         catAnimation.start()
+
         GlobalScope.async(Dispatchers.IO) {
             Thread.sleep(3500)
             GlobalScope.async (Dispatchers.Main){
