@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/TextScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toEndOf="@+id/TextScore2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TextScore2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="16dp"
+        android:text="Score"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BtFeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgApple"
+        android:layout_width="70dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="30dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/ImgLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCat"
+        app:layout_constraintVertical_bias="0.055"
+        app:srcCompat="@drawable/aplle" />
+
+    <ImageView
+        android:id="@+id/ImgLine"
+        android:layout_width="407dp"
+        android:layout_height="7dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/BtFeed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextScore2"
+        app:layout_constraintVertical_bias="0.972"
+        app:srcCompat="@drawable/line" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/BtFeed"
+        app:layout_constraintTop_toBottomOf="@+id/ImgLine" />
+
+    <ImageView
+        android:id="@+id/imgMilk"
+        android:layout_width="70dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="70dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/ImgLine"
+        app:layout_constraintStart_toEndOf="@+id/imgApple"
+        app:layout_constraintTop_toBottomOf="@+id/imgCat"
+        app:layout_constraintVertical_bias="0.055"
+        app:srcCompat="@drawable/milk" />
+
+    <ImageView
+        android:id="@+id/imgEat"
+        android:layout_width="70dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="30dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/ImgLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imgMilk"
+        app:layout_constraintTop_toBottomOf="@+id/imgCat"
+        app:layout_constraintVertical_bias="0.055"
+        app:srcCompat="@drawable/eat" />
+
+    <ImageView
+        android:id="@+id/imgCat"
+        android:layout_width="180dp"
+        android:layout_height="172dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

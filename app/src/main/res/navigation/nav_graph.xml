@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentStartAnimation">
+    <fragment
+        android:id="@+id/fragmentEat4"
+        android:name="com.example.cat.presentation.ui.FragmentEat"
+        android:label="FragmentEat" />
+    <fragment
+        android:id="@+id/fragmentEnd"
+        android:name="com.example.cat.presentation.ui.FragmentEnd"
+        android:label="FragmentEnd" />
+    <fragment
+        android:id="@+id/fragmentMenu"
+        android:name="com.example.cat.presentation.ui.FragmentMenu"
+        android:label="FragmentMenu" />
+    <fragment
+        android:id="@+id/fragmentLog"
+        android:name="com.example.cat.presentation.ui.FragmentLog"
+        android:label="FragmentLog" />
+    <fragment
+        android:id="@+id/fragmentResult"
+        android:name="com.example.cat.presentation.ui.FragmentResult"
+        android:label="FragmentResult" />
+    <fragment
+        android:id="@+id/fragmentAbout"
+        android:name="com.example.cat.presentation.ui.FragmentAbout"
+        android:label="FragmentAbout" />
+    <fragment
+        android:id="@+id/fragmentStartAnimation"
+        android:name="com.example.cat.presentation.ui.FragmentStartAnimation"
+        android:label="FragmentStartAnimation" />
+</navigation>
